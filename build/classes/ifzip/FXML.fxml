@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="246.0" prefWidth="445.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifzip.FXMLController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <Accordion layoutX="309.0" layoutY="129.0" />
+      <TitledPane id="tipoDeCompactacao" expanded="false" layoutX="14.0" layoutY="45.0" prefHeight="119.0" prefWidth="195.0" text="Tipo de Compactação">
+         <content>
+            <CheckBox id="checkBoxZIP" mnemonicParsing="false" text="CheckBox" />
+         </content>
+      </TitledPane>
+      <Button id="entrarAction" layoutX="313.0" layoutY="203.0" mnemonicParsing="false" onAction="#compactar" prefHeight="29.0" prefWidth="118.0" text="Compactar" textAlignment="CENTER" />
+      <Label layoutX="194.0" layoutY="14.0" prefHeight="21.0" prefWidth="59.0" text="IFZip" textFill="#239e37">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ProgressBar layoutX="75.0" layoutY="172.0" prefHeight="20.0" prefWidth="283.0" progress="0.0" />
+      <Button layoutX="182.0" layoutY="205.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="118.0" text="Descompactar" />
+      <Button layoutX="271.0" layoutY="45.0" mnemonicParsing="false" onAction="#arvoreDeDiretorios" prefHeight="25.0" prefWidth="118.0" text="Arquivo" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
